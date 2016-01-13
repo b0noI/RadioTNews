@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kovalevskyi.radiot.news.views.NewsView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/news_card_height"
+    android:layout_gravity="center"
+    android:layout_margin="4dp"
+    card_view:cardCornerRadius="@dimen/news_card_corner_radius">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="4dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            android:minLines="1"
+            android:maxLines="2"
+            android:text="test"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/snippet"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:lines="5"
+                android:text="asfsgdda asgdsadg asdgsdg asdgasdgsad asdgasdgas asgasdg asgasdg"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/plus_one"/>
+                    <TextView
+                        android:id="@+id/votes"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="6dp"
+                        android:text="12" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/open_in_browser"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</com.kovalevskyi.radiot.news.views.NewsView>
